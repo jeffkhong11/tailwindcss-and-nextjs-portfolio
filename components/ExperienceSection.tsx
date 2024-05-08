@@ -93,8 +93,8 @@ const ExperienceSection = () => {
                       <Image
                         src={experience.image}
                         alt={experience.company}
-                        width={1000}
-                        height={1000}
+                        width={450}
+                        height={450}
                         className="rounded-xl shadow-xl hover:opacity-70"
                       />
                     </div>
