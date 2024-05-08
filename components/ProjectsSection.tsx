@@ -6,27 +6,19 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "Bandicota.ai",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Bandicota.ai is a web app that uses LLM to analyze text for potential scam indicators and educates users on how to identify scams effectively.",
+    image: "/bandicota.png",
+    github: "https://github.com/jeffkhong11/learnai-bandicota",
+    link: "https://bandicota-ai.streamlit.app/",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
-  },
-  {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+    name: "bitFit102",
+    description: "bitFit102 is a mobile app that provides training plans for runners, gym users and those who wish to hybrid train. It also provides a platform for users to track their progress in the form of a workout log.",
+    image: "/bitfit102.png",
+    github: "https://github.com/jeffkhong11/bitfit102",
+    link: "https://drive.google.com/file/d/1x8HTvLvBR8zbG8OJoIPGee6URYkTMDpa/view",
   },
 ]
 
@@ -38,12 +30,12 @@ const ProjectsSection = () => {
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
 
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col items-center justify-center space-y-28">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                <div className="flex flex-col items-center justify-center animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
                     <Link href={project.link}>
                       <Image
